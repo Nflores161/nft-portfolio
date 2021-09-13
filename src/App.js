@@ -8,7 +8,6 @@ import About from "./Components/About";
 function App() {
   return (
     <div>
-      <Home />
       <div>
         <BrowserRouter>
           <Switch>
