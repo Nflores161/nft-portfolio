@@ -21,11 +21,11 @@ const Home = (props) => {
     justifyContent: 'space-around',
     flexDirection: 'column'}}>
       
-      <div style={{maxWidth: "80%", display: "flex", alignItems: "center"}}>
+      <div style={{maxWidth: "95%", display: "flex", alignItems: "center"}}>
       <Nav.Link to="/contact" as={Link}>    
         <h1 className="arrow"> {leftArrow} </h1>
       </Nav.Link>
-        <div className="fade-in-hello" style={{display: "flex", flex: "wrap", textAlign: 'center'}}>
+        <div className="fade-in-hello" style={{display: "flex", flex: "wrap", textAlign: 'center', marginRight:"1em", marginLeft:"1em"}}>
 
           <div style={{border: "1px solid rgb(228, 220, 220)", backgroundColor: "black", padding: "5em",  borderRadius: "25px", opacity: "85%", boxShadow: "0 0 0.25em 0.25em rgba(0, 0, 0, 0.25)"}}>
             <h1>Hi.  I'm <span className="fade-in-name" style={{color: "rgb(169, 98, 202)"}}><b>Nick F-T</b></span>, a full stack engineer, musician, lifetime learner and creative.</h1>
