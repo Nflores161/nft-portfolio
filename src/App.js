@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from './Components/Home'
 import Contact from "./Components/Contact";
 import Portfolio from "./Components/Portfolio";
@@ -12,7 +12,7 @@ function App() {
         <Router>
           <Route render={(routerProps) =>   <Navigation routerProps={routerProps} /> }/>
           <Switch>
-            <Route exact path='/' 
+            <Route exact path='/home' 
             render={(routerProps) => 
                <Home routerProps={routerProps}/>}/>
             <Route exact path='/about' 

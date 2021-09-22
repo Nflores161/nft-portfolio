@@ -1,41 +1,41 @@
 import React from 'react'
 import Background from '../images/DSC04123.jpg'
-// import Ticker from 'react-ticker'
-import Navigation from "../Navigation";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faChevronLeft } from '@fortawesome/free-solid-svg-icons'
+import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
+import { Link } from 'react-router-dom'
+import { Nav } from 'react-bootstrap'
 
 const Home = (props) => {
 
+  const leftArrow = <FontAwesomeIcon icon={faChevronLeft}/>
+  const rightArrow = <FontAwesomeIcon icon={faChevronRight}/>
+
   return (
-    <div>
-    {/* <Navigation/>   */}
     <div style={{backgroundImage: `url(${Background})`, backgroundPosition: 'center', backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
     width: '100vw',
     height: '100vh',
     display: 'flex',
     alignItems: 'center',
-    justifyContent: 'space-around'}}>
+    justifyContent: 'space-around',
+    flexDirection: 'column'}}>
+      
+      <div style={{maxWidth: "80%", display: "flex", alignItems: "center"}}>
+      <Nav.Link to="/contact" as={Link}>    
+        <h1 className="arrow"> {leftArrow} </h1>
+      </Nav.Link>
+        <div className="fade-in-hello" style={{display: "flex", flex: "wrap", textAlign: 'center'}}>
 
-    <div style={{display: "flex", maxWidth: '80%', textAlign: 'center', justifyContent: "space-between"}}>
-      <div style={{border: "2px solid white", backgroundColor: "black"}}>
-        <h2>Hi, I'm Nick F-T and I'm a full stack engineer.<br></br> Welcome to my portfolio page.</h2>
-        <p>I'm a full stack developer with a creative drive and passion for design. Coming from a background in creative merchandising and marketing management, my approach to creating with usability and functionality completely transcend from the front end to the back end.</p>
+          <div style={{border: "1px solid rgb(228, 220, 220)", backgroundColor: "black", padding: "5em",  borderRadius: "25px", opacity: "85%", boxShadow: "0 0 0.25em 0.25em rgba(0, 0, 0, 0.25)"}}>
+            <h1>Hi.  I'm <span className="fade-in-name" style={{color: "rgb(169, 98, 202)"}}><b>Nick F-T</b></span>, a full stack engineer, musician, lifetime learner and creative.</h1>
+            <p>(click right arrow to learn more!)</p>
+          </div>
+        </div> 
+      <Nav.Link to="/about" as={Link}>
+        <h1 className="arrow"> {rightArrow} </h1>
+      </Nav.Link>
       </div>
-      <div style={{border: "2px solid white", backgroundColor: "black"}}>
-        <p>Photo of myself here</p>
-      </div>
-    </div>
-
-    {/* <Ticker>
-      {({ index }) => (
-          <>
-              <h1 style={{color: "white", whiteSpace: "nowrap"}}>Welcome to Nick Flores-Tober's personal portfolio page.</h1><br></br>
-              <img src="www.my-image-source.com/" alt=""/>
-          </>
-      )}
-    </Ticker> */}
-
-    </div>
     </div>
   )
 }
