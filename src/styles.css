@@ -1,5 +1,5 @@
 html, body {
-  /* box-sizing: border-box; */
+  box-sizing: border-box;
   margin: auto;
   color: rgb(228, 220, 220);
   background-color: black;

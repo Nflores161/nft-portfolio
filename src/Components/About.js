@@ -15,8 +15,6 @@ const About = (props) => {
   return (
     <div 
     style={{
-    //   backgroundImage: `url("")`, backgroundPosition: 'center', backgroundSize: 'cover',
-    // backgroundRepeat: 'no-repeat',
     width: '100vw',
     height: '80vh',
     display: 'flex',
@@ -44,7 +42,7 @@ const About = (props) => {
         {/* <span style={{color: "rgb(169, 98, 202)", fontSize: "1.7em"}}>A developer with a creative drive and passion for design.</span>
         <br></br> */}
         <p>
-        Coming from a background in creative merchandising and marketing management, my operational approach to development by means of aesthetic delineation transcends from the front end to the back end.
+        Coming from a background in creative merchandising and marketing management, my operational approach to development by means of aesthetic delineation transcends from the front to the back end.
         {/* , 
         with usability and functionality at the forefront,  */}
       </p>
