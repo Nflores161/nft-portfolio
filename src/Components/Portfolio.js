@@ -22,7 +22,7 @@ const Portfolio = () => {
       flexDirection: 'column'}}>
 
     <div style={{maxWidth: "90%", display: "flex", alignItems: "center", textAlign:"center", marginTop:"5em"}}>
-        <Nav.Link to="/home" as={Link}>    
+        <Nav.Link to="/about" as={Link}>    
           <h1 className="arrow"> {leftArrow} </h1>
         </Nav.Link>
 
@@ -32,7 +32,7 @@ const Portfolio = () => {
           }}>
           <PortfolioCard/>
         </div>
-        <Nav.Link to="/portfolio" as={Link}>
+        <Nav.Link to="/contact" as={Link}>
           <h1 className="arrow"> {rightArrow} </h1>
         </Nav.Link>
       </div>

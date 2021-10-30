@@ -6,7 +6,8 @@ const Contact = () => {
     // Keep an eye out for what ill do next... Stay in touch!
 
     <div>
-     
+     <h1 style={{textAlign: "center"}}>Keep an eye out for what ill do next... Stay in touch!</h1>
+
      <div className="hit-area">
       <div className="hitbox" id="a-1"></div>
       <div className="hitbox" id="a-2"></div>
