@@ -6,7 +6,7 @@ const PortfolioCard = () => {
     <Container>
       <Row>
         <Col xs={6} md={4}>
-          <h1>Title</h1>
+          <h1>Cat Fight</h1>
           <img scr="#" alt="none"></img>
           <p>description</p>
         </Col>

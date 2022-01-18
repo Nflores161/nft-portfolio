@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch, Redirect } from "react-router-dom";
 import Home from './Components/Home'
 import Contact from "./Components/Contact";
 import Portfolio from "./Components/Portfolio";
@@ -10,9 +10,11 @@ import Navigation from "./Navigation";
 function App() {
   return (
         <Router>
-          <Route render={(routerProps) =>   <Navigation routerProps={routerProps} /> }/>
+          <Route 
+          render={(routerProps) =>   
+            <Navigation routerProps={routerProps} /> }/>
           <Switch>
-            <Route exact path='/home' 
+            <Route path='/home' 
             render={(routerProps) => 
                <Home routerProps={routerProps}/>}/>
             <Route exact path='/about' 
@@ -25,6 +27,9 @@ function App() {
             render={props => (
                <Portfolio {...props}/>)}/>
           </Switch>
+          <Route exact path="/">
+            <Redirect to="/home" />
+          </Route>
         </Router>
   );
 }

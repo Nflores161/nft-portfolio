@@ -4,7 +4,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronLeft } from '@fortawesome/free-solid-svg-icons'
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom'
-import { Nav } from 'react-bootstrap'
+import { Nav, Image } from 'react-bootstrap'
+import profilePic from '../images/nick.JPG'
 
 const Home = (props) => {
 
@@ -25,12 +26,19 @@ const Home = (props) => {
       <Nav.Link to="/contact" as={Link}>    
         <h1 className="arrow"> {leftArrow} </h1>
       </Nav.Link>
-        <div className="fade-in-hello" style={{display: "flex", flex: "wrap", textAlign: 'center', marginRight:"1em", marginLeft:"1em"}}>
 
-          <div style={{border: "1px solid rgb(228, 220, 220)", backgroundColor: "black", padding: "5em",  borderRadius: "25px", opacity: "85%", boxShadow: "0 0 0.25em 0.25em rgba(0, 0, 0, 0.25)"}}>
+      <div>
+      <Image className="profileImage fade-in-name" src={profilePic} alt=""/>
+      
+        <div className="fade-in-hello" style={{display: "flex", flex: "wrap", textAlign: 'center', marginRight:"1em", marginLeft:"1em"}}>
+          
+
+          <div style={{border: "1px solid rgb(228, 220, 220)", backgroundColor: "black", padding: "4em",  borderRadius: "25px", opacity: "85%", boxShadow: "0px -10px 30px #ccc", maxWidth: "70%", marginLeft: "auto", marginRight: "auto"}}>
             <h1>Hi.  I'm <span className="fade-in-name" style={{color: "rgb(169, 98, 202)"}}><b>Nick F-T</b></span>, a full stack engineer, musician, lifetime learner and creative.</h1>
             <p>(click right arrow to learn more!)</p>
           </div>
+        </div>
+
         </div> 
       <Nav.Link to="/about" as={Link}>
         <h1 className="arrow"> {rightArrow} </h1>
