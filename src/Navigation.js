@@ -5,7 +5,7 @@ import { Navbar, Nav } from 'react-bootstrap';
 const Navigation = (props) => {
   return(
     // <div className="lob-font">
-      <Navbar fill expand="lg" variant="tabs" className="justify-content-around fixed-top-nav fixed-top">
+      <Navbar fill expand="lg" variant="tabs" className="justify-content-around">
         <Nav className="mr-auto nav-btn">
           <NavLink activeClassName="active" to='/home' as={Link} className="NavLink">
             <h4 style={{color: "white"}} >Home</h4>

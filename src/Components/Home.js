@@ -15,6 +15,7 @@ const Home = (props) => {
   return (
     <div style={{backgroundImage: `url(${Background})`, backgroundPosition: 'center', backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
+    marginTop: "2em",
     width: '100vw',
     height: '100vh',
     display: 'flex',
@@ -22,7 +23,7 @@ const Home = (props) => {
     justifyContent: 'space-around',
     flexDirection: 'column'}}>
       
-      <div style={{maxWidth: "95%", display: "flex", alignItems: "center"}}>
+      <div style={{maxWidth: "95%", display: "flex", alignItems: "center",justifyContent: "center"}}>
       <Nav.Link to="/contact" as={Link}>    
         <h1 className="arrow"> {leftArrow} </h1>
       </Nav.Link>
@@ -33,7 +34,7 @@ const Home = (props) => {
         <div className="fade-in-hello" style={{display: "flex", flex: "wrap", textAlign: 'center', marginRight:"1em", marginLeft:"1em"}}>
           
 
-          <div style={{border: "1px solid rgb(228, 220, 220)", backgroundColor: "black", padding: "4em",  borderRadius: "25px", opacity: "85%", boxShadow: "0px -10px 30px #ccc", maxWidth: "70%", marginLeft: "auto", marginRight: "auto"}}>
+          <div style={{border: "1px solid", backgroundColor: "black", padding: "4em",  borderRadius: "25px", opacity: "85%", boxShadow: "0px -10px 30px #ccc", maxWidth: "70%", marginLeft: "auto", marginRight: "auto"}}>
             <h1>Hi.  I'm <span className="fade-in-name" style={{color: "rgb(169, 98, 202)"}}><b>Nick F-T</b></span>, a full stack engineer, musician, lifetime learner and creative.</h1>
             <p>(click right arrow to learn more!)</p>
           </div>
